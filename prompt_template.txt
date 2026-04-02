@@ -1,0 +1,37 @@
+Setup logging:
+ 
+1) Create or update ".cursor/rules/logging.mdc" (do not create duplicates).
+ 
+2) Add:
+ 
+After every response:
+- Save to logs/prompt_log_<timestamp>.md
+- Use markdown only (.md), no JSON
+- Include:
+ 
+# Prompt
+<Original Prompt>
+ 
+# Explanation / Answer
+<Generated Response>
+ 
+(VERBATIM: exact copy, no summarization)
+ 
+# Generated Code / SQL / Files
+- Include FULL code/files
+- No truncation, no "..."
+ 
+# Notes
+<Optional>
+ 
+- Always create new file
+- Never overwrite logs
+ 
+3) Ensure "logs" folder exists.
+4) Confirm setup.
+below is the source configuration file contents load it :
+CONNECTION JSON:
+{CONNECTION_JSON}
+---
+LOGIC JSON:
+{LOGIC_JSON}

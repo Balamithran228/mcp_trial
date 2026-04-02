@@ -1,0 +1,14 @@
+# Credentials - NEVER share
+.env
+session.json
+
+# Virtual environment
+.venv/
+
+# Generated debug outputs
+debug_output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
